@@ -1,0 +1,29 @@
+@use "sass:map";
+@use "functions" as f;
+
+$colors: (
+  "magenta": #f53467,
+  "dark-grey": #261132,
+);
+
+$color-brand: map.get($colors, "magenta");
+$color-link: map.get($colors, "magenta");
+$color-text: map.get($colors, "dark-grey");
+
+$breakpoints: (
+  "xs": 320px,
+  "md": 768px,
+);
+
+$content-text-size: f.px-to-rem(16px);
+$content-text-size-large: f.px-to-rem(18px);
+
+$wrapper-max-width: 1440px;
+$content-max-width: 996px;
+$wrapper-gutter: 18px;
+$wrapper-gutter-large: 36px;
+
+$font-text: "DM Mono", Helvetica, "san-serif";
+$font-headline: "Bitter", "Times New Roman", "serif";
+
+$logo-width: 322px;

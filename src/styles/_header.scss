@@ -1,0 +1,25 @@
+@use "sass:map";
+@use "variables" as v;
+
+.ag {
+  &-header {
+    $bg-height: 12px;
+    padding: 0 0 $bg-height 0;
+    background: url("../assets/header-line.png") repeat-x left bottom;
+    background-size: 1448px $bg-height;
+  }
+
+  &-logo-row {
+    padding-top: var(--wrapper-gutter);
+    padding-bottom: var(--wrapper-gutter);
+  }
+
+  &-logo {
+    display: block;
+    width: map.get(v.$breakpoints, "xs") - v.$wrapper-gutter * 2;
+
+    @media screen and (min-width: (v.$logo-width + v.$wrapper-gutter * 2)) {
+      width: v.$logo-width;
+    }
+  }
+}

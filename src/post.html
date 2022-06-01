@@ -2,15 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Egyéni poszt vagy page nézet</title>
+    <title>{{title}}</title>
   </head>
-  <body>
-    <div id="app">
-      <h1>Poszt</h1>
-      <a href="index.html">vissza a főoldalra</a>
-    </div>
+  <body class="ag-layout">
+    {{> header }}
+    <main class="ag-main" id="content">
+      <div class="ag-wrapper ag-wrapper-main">
+        <h1>Post</h1>
+      </div>
+    </main>
+    {{> footer }}
     <script type="module" src="./js/main.js"></script>
   </body>
 </html>

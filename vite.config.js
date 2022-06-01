@@ -1,10 +1,31 @@
 import { resolve } from "path";
 import { defineConfig } from "vite";
+import handlebars from "vite-plugin-handlebars";
 
 const root = resolve(__dirname, "src");
 const outDir = resolve(__dirname, "dist");
 
+const pageData = {
+  "/index.html": {
+    title: "Főoldal",
+  },
+  "/post.html": {
+    title: "Egyéni poszt vagy page nézet",
+  },
+  "/list-view.html": {
+    title: "Lista nézet (kategória, tag, szerző)",
+  },
+};
+
 export default defineConfig({
+  plugins: [
+    handlebars({
+      partialDirectory: resolve(root, "partials"),
+      context(pagePath) {
+        return pageData[pagePath];
+      },
+    }),
+  ],
   root,
   build: {
     outDir,
