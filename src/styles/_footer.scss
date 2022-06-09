@@ -1,11 +1,47 @@
+@use "sass:map";
+@use "functions" as f;
+@use "variables" as v;
+
 .ag {
   &-footer {
     $bg-height: 6px;
 
     text-align: center;
     background: url("../assets/footer-line.png") repeat-x left top;
-    background-size: 1549px $bg-height;
     padding: calc(#{$bg-height} + var(--wrapper-gutter)) 0 var(--wrapper-gutter)
       0;
+  }
+
+  &-footer-links {
+    @media screen and (min-width: map.get(v.$breakpoints, "lg")) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &-footer-link-items {
+    margin-bottom: 1rem;
+    font-family: v.$font-headline;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    @media screen and (min-width: map.get(v.$breakpoints, "lg")) {
+      margin-bottom: 0;
+      padding-left: var(--wrapper-gutter);
+      padding-right: var(--wrapper-gutter);
+    }
+  }
+
+  &-footer-link {
+    font-size: f.px-to-rem(14px);
+    color: v.$color-text;
+    transition: all v.$default-transition;
+
+    &:hover,
+    &:focus {
+      color: v.$color-brand;
+    }
   }
 }

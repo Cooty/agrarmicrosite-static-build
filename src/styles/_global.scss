@@ -3,23 +3,34 @@
 
 :root {
   --wrapper-gutter: #{v.$wrapper-gutter};
+  --text-size: #{v.$content-text-size};
+  --vertical-gutter: 40px;
+  --small-text-font-size: #{v.$small-text-size};
 
-  @media screen and (min-width: map.get(v.$breakpoints, "md")) {
+  @media screen and (min-width: map.get(v.$breakpoints, "lg")) {
     --wrapper-gutter: #{v.$wrapper-gutter-large};
+    --text-size: #{v.$content-text-size-large};
+    --vertical-gutter: 78px;
+    --small-text-font-size: #{v.$small-text-size-large};
   }
 }
 
-html,
 body {
-  font-size: v.$content-text-size;
+  font-size: var(--text-size);
   font-family: v.$font-text;
+  background: v.$color-bg;
+}
 
-  @media screen and (min-width: map.get(v.$breakpoints, "md")) {
-    font-size: v.$content-text-size-large;
-  }
+body.ag-lte-lg-nav-opened {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 * {
+  &,
   &::after,
   &::before {
     box-sizing: border-box;
@@ -81,4 +92,8 @@ a::selection {
 a::-moz-selection {
   color: v.$color-text;
   background-color: v.$color-brand;
+}
+
+[x-cloak] {
+  display: none !important;
 }

@@ -1,0 +1,5 @@
+@use "variables" as v;
+
+.text-brand {
+  color: v.$color-brand !important;
+}

@@ -8,6 +8,7 @@ const outDir = resolve(__dirname, "dist");
 const pageData = {
   "/index.html": {
     title: "Főoldal",
+    entry: "home",
   },
   "/post.html": {
     title: "Egyéni poszt vagy page nézet",

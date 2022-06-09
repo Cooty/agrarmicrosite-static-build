@@ -1,0 +1,107 @@
+@use "sass:map";
+@use "variables" as v;
+@use "functions" as f;
+
+.ag {
+  $tag-gutter: 8px;
+
+  &-post {
+    --vertical-post-gutter: #{f.px-to-rem(24px)};
+    --h1-size: #{f.px-to-rem(30px)};
+    --h1-line-height: #{f.px-to-rem(35px)};
+    --lead-size: #{f.px-to-rem(20px)};
+    --lead-line-height: #{f.px-to-rem(29px)};
+
+    @media screen and (min-width: map.get(v.$breakpoints, "lg")) {
+      --vertical-post-gutter: #{f.px-to-rem(36px)};
+      --h1-size: #{f.px-to-rem(36px)};
+      --h1-line-height: #{f.px-to-rem(42px)};
+      --lead-size: #{f.px-to-rem(22px)};
+      --lead-line-height: #{f.px-to-rem(32px)};
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      -webkit-hyphens: auto;
+      -moz-hyphens: auto;
+      hyphens: auto;
+    }
+
+    a:not(.ag-lead, .ag-tag) {
+      transition: all v.$default-transition;
+      color: v.$color-brand;
+
+      &:hover,
+      &:focus {
+        color: v.$color-text;
+      }
+    }
+  }
+
+  &-post-header {
+    margin-bottom: var(--vertical-post-gutter);
+  }
+
+  &-post-title {
+    color: v.$color-brand;
+    font-size: var(--h1-size);
+    line-height: var(--h1-line-height);
+    margin-bottom: 0.6em;
+    font-family: v.$font-headline;
+    font-weight: 500;
+  }
+
+  &-post-info {
+    margin-bottom: 1rem;
+    font-family: v.$font-headline;
+  }
+
+  &-post-tags {
+    margin-top: -#{$tag-gutter};
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &-tag {
+    display: block;
+    padding: 6px;
+    line-height: 1;
+    white-space: nowrap;
+    border-radius: v.$default-radius;
+    color: v.$color-secondary-text;
+    border-radius: v.$default-radius;
+    margin: $tag-gutter $tag-gutter 0 0;
+    transition: all v.$default-transition;
+    font-size: var(--small-text-font-size);
+    border: 1px solid currentColor;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    &:hover,
+    &:focus {
+      color: v.$color-brand;
+    }
+  }
+
+  &-lead {
+    display: block;
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: var(--vertical-post-gutter);
+    font-size: var(--lead-size);
+    line-height: var(--lead-line-height);
+    color: v.$color-text;
+  }
+
+  &:last-child {
+    margin-bottom: 0 !important;
+  }
+}

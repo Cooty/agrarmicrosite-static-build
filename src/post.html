@@ -1,19 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{title}}</title>
-  </head>
-  <body class="ag-layout">
-    {{> header }}
-    <main class="ag-main" id="content">
-      <div class="ag-wrapper ag-wrapper-main">
-        <h1>Post</h1>
-      </div>
-    </main>
-    {{> footer }}
-    <script type="module" src="./js/main.js"></script>
-  </body>
-</html>
+{{#> base }}
+<div class="ag-wrapper ag-wrapper-narrow">
+  <h1>Post</h1>
+</div>
+{{/base}}
