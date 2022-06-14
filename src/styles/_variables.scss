@@ -10,6 +10,7 @@ $colors: (
   "violet": rgba(154, 52, 142, 0.1),
   "almost-white": #f9f9f9,
   "purple": #9a348e,
+  "tertiary-black": rgba(38, 17, 50, 0.1),
 );
 
 $color-brand: map.get($colors, "magenta");
@@ -21,6 +22,7 @@ $color-highlight-bg: map.get($colors, "violet");
 $color-list-alternate-bg: map.get($colors, "almost-white");
 $color-link-active: map.get($colors, "pink");
 $color-link-visited: map.get($colors, "purple");
+$color-form-bg: map.get($colors, "tertiary-black");
 
 $breakpoints: (
   "xs": 320px,
