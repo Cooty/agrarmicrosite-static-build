@@ -80,16 +80,7 @@ em {
   background-color: v.$color-brand;
 }
 
-*::-moz-selection {
-  background-color: v.$color-brand;
-}
-
 a::selection {
-  color: v.$color-text;
-  background-color: v.$color-brand;
-}
-
-a::-moz-selection {
   color: v.$color-text;
   background-color: v.$color-brand;
 }

@@ -5,7 +5,11 @@ $colors: (
   "magenta": #f53467,
   "dark-grey": #261132,
   "light-grey": rgba(#261132, 70%),
+  "pink": rgba(#f53467, 0.5),
   "white": #fff,
+  "violet": rgba(154, 52, 142, 0.1),
+  "almost-white": #f9f9f9,
+  "purple": #9a348e,
 );
 
 $color-brand: map.get($colors, "magenta");
@@ -13,12 +17,18 @@ $color-link: map.get($colors, "magenta");
 $color-text: map.get($colors, "dark-grey");
 $color-bg: map.get($colors, "white");
 $color-secondary-text: map.get($colors, "light-grey");
+$color-highlight-bg: map.get($colors, "violet");
+$color-list-alternate-bg: map.get($colors, "almost-white");
+$color-link-active: map.get($colors, "pink");
+$color-link-visited: map.get($colors, "purple");
 
 $breakpoints: (
   "xs": 320px,
   "sm": 480px,
   "md": 768px,
   "lg": 1024px,
+  "xl": 1200px,
+  "xxl": 1440px,
 );
 
 $z-top: 1000;

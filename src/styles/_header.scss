@@ -121,6 +121,10 @@
 
     &:hover,
     &:focus {
+      color: v.$color-link-active;
+    }
+
+    &.ag-active {
       color: v.$color-brand;
     }
   }
@@ -149,10 +153,7 @@
     background: none;
     color: v.$color-text;
     padding: 0;
-
-    @media screen and (min-width: map.get(v.$breakpoints, "md")) {
-      top: 24px;
-    }
+    cursor: pointer;
 
     @media screen and (min-width: map.get(v.$breakpoints, "lg")) {
       display: none;

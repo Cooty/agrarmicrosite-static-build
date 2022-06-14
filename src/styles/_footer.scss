@@ -7,7 +7,7 @@
     $bg-height: 6px;
 
     text-align: center;
-    background: url("../assets/footer-line.png") repeat-x left top;
+    background: white url("../assets/footer-line.png") repeat-x left top;
     padding: calc(#{$bg-height} + var(--wrapper-gutter)) 0 var(--wrapper-gutter)
       0;
   }

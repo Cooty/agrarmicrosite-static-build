@@ -18,9 +18,7 @@
   </head>
   <body class="ag-layout" :class="lteLGNavOpened ? 'ag-lte-lg-nav-opened' : ''">
     {{> header }}
-    <main class="ag-main" id="content">
-      {{> @partial-block }}
-    </main>
+    {{> @partial-block }}
     {{> footer }}
     <script type="module" src="./js/main.js"></script>
     {{#if entry}}

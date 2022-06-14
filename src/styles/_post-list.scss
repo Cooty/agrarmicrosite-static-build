@@ -1,0 +1,27 @@
+@use "sass:map";
+@use "variables" as v;
+
+.ag {
+  &-post-list {
+    .ag-lead {
+      margin-bottom: 0;
+    }
+
+    &-item {
+      background-size: 240px auto;
+      background-repeat: no-repeat;
+      @media screen and (max-width: (map.get(v.$breakpoints, "xxl") - 1)) {
+        background-image: none !important;
+      }
+    }
+
+    &-item:nth-child(odd) {
+      background-position: -5% 5%;
+    }
+
+    &-item:nth-child(even) {
+      background-position: 105% 95%;
+      background-color: v.$color-list-alternate-bg;
+    }
+  }
+}

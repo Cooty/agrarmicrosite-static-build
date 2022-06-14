@@ -1,0 +1,30 @@
+@use "sass:map";
+@use "variables" as v;
+
+.ag {
+  &-illustration {
+    @media screen and (max-width: (map.get(v.$breakpoints, "xxl") - 1)) {
+      display: none;
+    }
+
+    display: block;
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+
+    &-top-left {
+      top: 20%;
+      left: -10%;
+      background-position: right center;
+    }
+
+    &-bottom-right {
+      bottom: 5%;
+      right: -10%;
+      background-position: left center;
+    }
+  }
+}

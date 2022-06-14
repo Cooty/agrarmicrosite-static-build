@@ -7,15 +7,15 @@
 
   &-post {
     --vertical-post-gutter: #{f.px-to-rem(24px)};
-    --h1-size: #{f.px-to-rem(30px)};
-    --h1-line-height: #{f.px-to-rem(35px)};
+    --h2-font-size: #{f.px-to-rem(30px)};
+    --h2-line-height: #{f.px-to-rem(35px)};
     --lead-size: #{f.px-to-rem(20px)};
     --lead-line-height: #{f.px-to-rem(29px)};
 
     @media screen and (min-width: map.get(v.$breakpoints, "lg")) {
       --vertical-post-gutter: #{f.px-to-rem(36px)};
-      --h1-size: #{f.px-to-rem(36px)};
-      --h1-line-height: #{f.px-to-rem(42px)};
+      --h2-font-size: #{f.px-to-rem(36px)};
+      --h2-line-height: #{f.px-to-rem(42px)};
       --lead-size: #{f.px-to-rem(22px)};
       --lead-line-height: #{f.px-to-rem(32px)};
     }
@@ -39,8 +39,14 @@
 
       &:hover,
       &:focus {
-        color: v.$color-text;
+        color: v.$color-link-active;
       }
+    }
+  }
+
+  a:not(.ag-no-visited) {
+    &:visited {
+      color: v.$color-link-visited;
     }
   }
 
@@ -50,8 +56,8 @@
 
   &-post-title {
     color: v.$color-brand;
-    font-size: var(--h1-size);
-    line-height: var(--h1-line-height);
+    font-size: var(--h2-font-size);
+    line-height: var(--h2-line-height);
     margin-bottom: 0.6em;
     font-family: v.$font-headline;
     font-weight: 500;
@@ -80,6 +86,7 @@
     transition: all v.$default-transition;
     font-size: var(--small-text-font-size);
     border: 1px solid currentColor;
+    background: white;
 
     &:last-of-type {
       margin-right: 0;
@@ -101,7 +108,7 @@
     color: v.$color-text;
   }
 
-  &:last-child {
+  > *:last-child {
     margin-bottom: 0 !important;
   }
 }
