@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="hu" x-data="{lteLGNavOpened: false, toggleMenuLteLG() { this.lteLGNavOpened = !this.lteLGNavOpened }}">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.17e50649.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;500&family=DM+Mono:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="preconnect" href="https://unpkg.com" crossorigin />
+    <script defer src="https://unpkg.com/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <title>Tudástár - Egyéb oldalak</title>
+    <script type="module" crossorigin src="/assets/style.7f2dd081.js"></script>
+    <link rel="stylesheet" href="/assets/style.2a8f1ac9.css">
+    <link rel="stylesheet" href="/assets/list-view.fe00d36c.css">
+  </head>
+  <body class="ag-layout" :class="lteLGNavOpened ? 'ag-lte-lg-nav-opened' : ''">
+    <header class="ag-header">
+      <a href="#content" class="ag-sr-only">Ugrárs a tartalomhoz</a>
+      <div class="ag-wrapper">
+        <div class="ag-logo-row" style="line-height: 0;">
+          <a href="/" style="line-height: 0; display: inline-block;">
+            <img src="/assets/logo.edcdc2fb.svg" alt="Agrártámogatások" class="ag-logo" />
+          </a>
+        </div>
+        <nav class="ag-nav">
+          <ul class="ag-nav-list">
+            <li class="ag-nav-item">
+              <a href="post.html" class="ag-nav-link">az elmúlt x év megállapításai</a>
+            </li>
+            <li class="ag-nav-item">
+              <a href="list-view.html" class="ag-nav-link">közös agrárpolitika</a>
+            </li>
+            <li class="ag-nav-item">
+              <a href="page-search.html" class="ag-nav-link">12 év adatai</a>
+            </li>
+            <li class="ag-nav-item">
+              <a href="list-view-tudastar.html" class="ag-nav-link">tudástár</a>
+            </li>
+            <li class="ag-nav-item">
+              <a href="page-impresszum.html" class="ag-nav-link">impresszum</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <button
+        type="button"
+        class="ag-menu-button-lte-lg"
+        x-bind:class="{'show': lteLGNavOpened}"
+        x-bind:aria-label="lteLGNavOpened ? 'Menü bezárása' : 'Menü kinyitása'"
+        @click="toggleMenuLteLG"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <template x-teleport="body">
+        <div
+          x-cloak
+          @click="toggleMenuLteLG"
+          class="ag-backdrop"
+          x-transition.duration.300ms
+          x-show="lteLGNavOpened"
+        ></div>
+      </template>
+    </header>
+    <main class="ag-main" id="content">
+      <div class="ag-wrapper ag-wrapper-narrow">
+        <nav class="ag-tabs">
+          <div class="ag-tabs-tab">
+            <a href="list-view-tudastar.html" class="ag-tabs-link">
+              Sajtóaadatbázis
+            </a>
+          </div>
+          <div class="ag-tabs-tab">
+            <a
+              href="list-view-tudastar-other.html"
+              class="ag-tabs-link ag-tabs-link-active"
+            >
+              Egyéb oldalakról
+            </a>
+          </div>
+        </nav>
+      </div>
+    
+      <ol class="ag-post-list-alternate">
+        <li
+          class="ag-post-list-alternate-item"
+          style="background-image: url('/assets/wheet03.76cd624d.png')"
+        >
+          <div class="ag-wrapper ag-wrapper-narrow">
+            <article class="ag-post">
+              <header class="ag-post-header">
+                <h2 class="ag-post-title">
+                  <a href="https://kozertheto.k-monitor.hu/" class="ag-no-visited"
+                    >Mintaváros költségvetése</a
+                  >
+                </h2>
+                <aside class="ag-post-meta">
+                  <div class="ag-post-info">
+                    <a href="http://k-monitor.hu" class="ag-no-visited">
+                      <i class="ag-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 442 442"
+                          xml:space="preserve"
+                        >
+                          <path
+                            d="M171 336H70c-5.523 0-10 4.477-10 10s4.477 10 10 10h101c5.523 0 10-4.477 10-10s-4.477-10-10-10zM322 336H221c-5.523 0-10 4.477-10 10s4.477 10 10 10h101c5.522 0 10-4.477 10-10s-4.478-10-10-10zM322 86H70c-5.523 0-10 4.477-10 10s4.477 10 10 10h252c5.522 0 10-4.477 10-10s-4.478-10-10-10zM322 136H221c-5.523 0-10 4.477-10 10s4.477 10 10 10h101c5.522 0 10-4.477 10-10s-4.478-10-10-10zM322 186H221c-5.523 0-10 4.477-10 10s4.477 10 10 10h101c5.522 0 10-4.477 10-10s-4.478-10-10-10zM322 236H221c-5.523 0-10 4.477-10 10s4.477 10 10 10h101c5.522 0 10-4.477 10-10s-4.478-10-10-10zM322 286H221c-5.523 0-10 4.477-10 10s4.477 10 10 10h101c5.522 0 10-4.477 10-10s-4.478-10-10-10zM171 286H70c-5.523 0-10 4.477-10 10s4.477 10 10 10h101c5.523 0 10-4.477 10-10s-4.477-10-10-10zM171 136H70c-5.523 0-10 4.477-10 10v101c0 5.523 4.477 10 10 10h101c5.523 0 10-4.477 10-10V146c0-5.523-4.477-10-10-10zm-10 101H80v-81h81v81z"
+                          />
+                          <path
+                            d="M422 76h-30V46c0-11.028-8.972-20-20-20H20C8.972 26 0 34.972 0 46v320c0 27.57 22.43 50 50 50h342c27.57 0 50-22.43 50-50V96c0-11.028-8.972-20-20-20zm0 290c0 16.542-13.458 30-30 30H50c-16.542 0-30-13.458-30-30V46h352v305c0 13.785 11.215 25 25 25 5.522 0 10-4.477 10-10s-4.478-10-10-10c-2.757 0-5-2.243-5-5V96h30v270z"
+                          />
+                        </svg>
+                      </i>
+                      K-Monitor </a
+                    >&nbsp;<span class="ag-text-brand">•</span>&nbsp;<a
+                      href="https://kozertheto.k-monitor.hu/"
+                      class="ag-no-visited"
+                      >2022.02.09.</a
+                    >
+                  </div>
+                </aside>
+              </header>
+              <a href="https://kozertheto.k-monitor.hu/" class="ag-lead">
+                Ezen az oldalon megtekintheted Mintaváros költségvetését és
+                fejlesztéseit, átlátható módon, interaktív vizualizációk
+                segítségével!
+              </a>
+              <div class="ag-post-tags">
+                <a href="/list-view.html" class="ag-tag">átlátható</a>
+                <a href="/list-view.html" class="ag-tag">költségvetés</a>
+              </div>
+            </article>
+          </div>
+        </li>
+        <li
+          class="ag-post-list-alternate-item"
+          style="background-image: url('/assets/wheet02.b85e2fc4.png')"
+        >
+          <div class="ag-wrapper ag-wrapper-narrow">
+            <article class="ag-post">
+              <header class="ag-post-header">
+                <h2 class="ag-post-title">
+                  <a
+                    href="https://devcenter.heroku.com/articles/websocket-security"
+                    class="ag-no-visited"
+                    >WebSocket Security</a
+                  >
+                </h2>
+                <aside class="ag-post-meta">
+                  <div class="ag-post-info">
+                    <a href="https://devcenter.heroku.com/" class="ag-no-visited">
+                      <i class="ag-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 442 442"
+                          xml:space="preserve"
+                        >
+                          <path
+                            d="M171 336H70c-5.523 0-10 4.477-10 10s4.477 10 10 10h101c5.523 0 10-4.477 10-10s-4.477-10-10-10zM322 336H221c-5.523 0-10 4.477-10 10s4.477 10 10 10h101c5.522 0 10-4.477 10-10s-4.478-10-10-10zM322 86H70c-5.523 0-10 4.477-10 10s4.477 10 10 10h252c5.522 0 10-4.477 10-10s-4.478-10-10-10zM322 136H221c-5.523 0-10 4.477-10 10s4.477 10 10 10h101c5.522 0 10-4.477 10-10s-4.478-10-10-10zM322 186H221c-5.523 0-10 4.477-10 10s4.477 10 10 10h101c5.522 0 10-4.477 10-10s-4.478-10-10-10zM322 236H221c-5.523 0-10 4.477-10 10s4.477 10 10 10h101c5.522 0 10-4.477 10-10s-4.478-10-10-10zM322 286H221c-5.523 0-10 4.477-10 10s4.477 10 10 10h101c5.522 0 10-4.477 10-10s-4.478-10-10-10zM171 286H70c-5.523 0-10 4.477-10 10s4.477 10 10 10h101c5.523 0 10-4.477 10-10s-4.477-10-10-10zM171 136H70c-5.523 0-10 4.477-10 10v101c0 5.523 4.477 10 10 10h101c5.523 0 10-4.477 10-10V146c0-5.523-4.477-10-10-10zm-10 101H80v-81h81v81z"
+                          />
+                          <path
+                            d="M422 76h-30V46c0-11.028-8.972-20-20-20H20C8.972 26 0 34.972 0 46v320c0 27.57 22.43 50 50 50h342c27.57 0 50-22.43 50-50V96c0-11.028-8.972-20-20-20zm0 290c0 16.542-13.458 30-30 30H50c-16.542 0-30-13.458-30-30V46h352v305c0 13.785 11.215 25 25 25 5.522 0 10-4.477 10-10s-4.478-10-10-10c-2.757 0-5-2.243-5-5V96h30v270z"
+                          />
+                        </svg>
+                      </i>
+                      Heroku Devcenter </a
+                    >&nbsp;<span class="ag-text-brand">•</span>&nbsp;<a
+                      href="https://devcenter.heroku.com/articles/websocket-security"
+                      class="ag-no-visited"
+                      >2022.02.09.</a
+                    >
+                  </div>
+                </aside>
+              </header>
+              <a
+                href="https://devcenter.heroku.com/articles/websocket-security"
+                class="ag-lead"
+              >
+                The WebSocket protocol is a young technology, and brings with it
+                some risks. Decades of experience have taught the web community some
+                best practices around HTTP security, but the security best practices
+                in the WebSocket world aren’t firmly established, and continue to
+                evolve. Nevertheless, some themes have emerged and they are
+                described in this article.
+              </a>
+              <div class="ag-post-tags">
+                <a href="/list-view.html" class="ag-tag">websocket</a>
+                <a href="/list-view.html" class="ag-tag">heroku</a>
+                <a href="/list-view.html" class="ag-tag">wss</a>
+              </div>
+            </article>
+          </div>
+        </li>
+        <li
+          class="ag-post-list-alternate-item"
+          style="background-image: url('/assets/wheet.ddeb8e1d.png')"
+        >
+          <div class="ag-wrapper ag-wrapper-narrow">
+            <article class="ag-post">
+              <header class="ag-post-header">
+                <h2 class="ag-post-title">
+                  <a
+                    href="https://www.freecodecamp.org/news/how-to-secure-your-websocket-connections-d0be0996c556/"
+                    class="ag-no-visited"
+                    >How to secure your WebSocket connections</a
+                  >
+                </h2>
+                <aside class="ag-post-meta">
+                  <div class="ag-post-info">
+                    <a href="https://www.freecodecamp.org/" class="ag-no-visited">
+                      <i class="ag-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 442 442"
+                          xml:space="preserve"
+                        >
+                          <path
+                            d="M171 336H70c-5.523 0-10 4.477-10 10s4.477 10 10 10h101c5.523 0 10-4.477 10-10s-4.477-10-10-10zM322 336H221c-5.523 0-10 4.477-10 10s4.477 10 10 10h101c5.522 0 10-4.477 10-10s-4.478-10-10-10zM322 86H70c-5.523 0-10 4.477-10 10s4.477 10 10 10h252c5.522 0 10-4.477 10-10s-4.478-10-10-10zM322 136H221c-5.523 0-10 4.477-10 10s4.477 10 10 10h101c5.522 0 10-4.477 10-10s-4.478-10-10-10zM322 186H221c-5.523 0-10 4.477-10 10s4.477 10 10 10h101c5.522 0 10-4.477 10-10s-4.478-10-10-10zM322 236H221c-5.523 0-10 4.477-10 10s4.477 10 10 10h101c5.522 0 10-4.477 10-10s-4.478-10-10-10zM322 286H221c-5.523 0-10 4.477-10 10s4.477 10 10 10h101c5.522 0 10-4.477 10-10s-4.478-10-10-10zM171 286H70c-5.523 0-10 4.477-10 10s4.477 10 10 10h101c5.523 0 10-4.477 10-10s-4.477-10-10-10zM171 136H70c-5.523 0-10 4.477-10 10v101c0 5.523 4.477 10 10 10h101c5.523 0 10-4.477 10-10V146c0-5.523-4.477-10-10-10zm-10 101H80v-81h81v81z"
+                          />
+                          <path
+                            d="M422 76h-30V46c0-11.028-8.972-20-20-20H20C8.972 26 0 34.972 0 46v320c0 27.57 22.43 50 50 50h342c27.57 0 50-22.43 50-50V96c0-11.028-8.972-20-20-20zm0 290c0 16.542-13.458 30-30 30H50c-16.542 0-30-13.458-30-30V46h352v305c0 13.785 11.215 25 25 25 5.522 0 10-4.477 10-10s-4.478-10-10-10c-2.757 0-5-2.243-5-5V96h30v270z"
+                          />
+                        </svg>
+                      </i>
+                      Freecodecamp </a
+                    >&nbsp;<span class="ag-text-brand">•</span>&nbsp;<a
+                      href="https://www.freecodecamp.org/news/how-to-secure-your-websocket-connections-d0be0996c556/"
+                      class="ag-no-visited"
+                      >2022.02.09.</a
+                    >
+                  </div>
+                </aside>
+              </header>
+              <a
+                href="https://www.freecodecamp.org/news/how-to-secure-your-websocket-connections-d0be0996c556/"
+                class="ag-lead"
+              >
+                The Web is growing at a massive rate. More and more web apps are
+                dynamic, immersive and do not require the end user to refresh. There
+                is emerging support for low latency communication technologies like
+                websockets. Websockets allow us to achieve real-time communication
+                among different clients connected to a server.
+              </a>
+              <div class="ag-post-tags">
+                <a href="/list-view.html" class="ag-tag">wss</a>
+                <a href="/list-view.html" class="ag-tag">security</a>
+              </div>
+            </article>
+          </div>
+        </li>
+        <li
+          class="ag-post-list-alternate-item"
+          style="background-image: url('/assets/truck.774095ec.png')"
+        >
+          <div class="ag-wrapper ag-wrapper-narrow">
+            <article class="ag-post">
+              <header class="ag-post-header">
+                <h2 class="ag-post-title">
+                  <a
+                    href="https://k.blog.hu/2022/05/27/ez_a_minimum_audit"
+                    class="ag-no-visited"
+                    >Átláthatóbb önkormányzatok? Számonkértük az ígéreteket</a
+                  >
+                </h2>
+                <aside class="ag-post-meta">
+                  <div class="ag-post-info">
+                    <a href="https://k.blog.hu/" class="ag-no-visited">
+                      <i class="ag-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 442 442"
+                          xml:space="preserve"
+                        >
+                          <path
+                            d="M171 336H70c-5.523 0-10 4.477-10 10s4.477 10 10 10h101c5.523 0 10-4.477 10-10s-4.477-10-10-10zM322 336H221c-5.523 0-10 4.477-10 10s4.477 10 10 10h101c5.522 0 10-4.477 10-10s-4.478-10-10-10zM322 86H70c-5.523 0-10 4.477-10 10s4.477 10 10 10h252c5.522 0 10-4.477 10-10s-4.478-10-10-10zM322 136H221c-5.523 0-10 4.477-10 10s4.477 10 10 10h101c5.522 0 10-4.477 10-10s-4.478-10-10-10zM322 186H221c-5.523 0-10 4.477-10 10s4.477 10 10 10h101c5.522 0 10-4.477 10-10s-4.478-10-10-10zM322 236H221c-5.523 0-10 4.477-10 10s4.477 10 10 10h101c5.522 0 10-4.477 10-10s-4.478-10-10-10zM322 286H221c-5.523 0-10 4.477-10 10s4.477 10 10 10h101c5.522 0 10-4.477 10-10s-4.478-10-10-10zM171 286H70c-5.523 0-10 4.477-10 10s4.477 10 10 10h101c5.523 0 10-4.477 10-10s-4.477-10-10-10zM171 136H70c-5.523 0-10 4.477-10 10v101c0 5.523 4.477 10 10 10h101c5.523 0 10-4.477 10-10V146c0-5.523-4.477-10-10-10zm-10 101H80v-81h81v81z"
+                          />
+                          <path
+                            d="M422 76h-30V46c0-11.028-8.972-20-20-20H20C8.972 26 0 34.972 0 46v320c0 27.57 22.43 50 50 50h342c27.57 0 50-22.43 50-50V96c0-11.028-8.972-20-20-20zm0 290c0 16.542-13.458 30-30 30H50c-16.542 0-30-13.458-30-30V46h352v305c0 13.785 11.215 25 25 25 5.522 0 10-4.477 10-10s-4.478-10-10-10c-2.757 0-5-2.243-5-5V96h30v270z"
+                          />
+                        </svg>
+                      </i>
+                      K-Monitor </a
+                    >&nbsp;<span class="ag-text-brand">•</span>&nbsp;<a
+                      href="https://k.blog.hu/2022/05/27/ez_a_minimum_audit"
+                      class="ag-no-visited"
+                      >2022.02.09.</a
+                    >
+                  </div>
+                </aside>
+              </header>
+              <a
+                href="https://k.blog.hu/2022/05/27/ez_a_minimum_audit"
+                class="ag-lead"
+              >
+                A 2019-es önkormányzati választások előtt az Átlátszó, a K-Monitor
+                és a Transparency International Magyarország Ez a Minimum! néven
+                átláthatósági programot hirdetett meg, amely hat témában foglalta
+                össze a helyi döntéshozatal átláthatóságának alapkövetelményeit. A
+                kampányban a program mellett elköteleződő jelöltek azt ígérték:
+                megválasztásuk esetén a ciklus végéig megvalósítják a programot
+                saját településükön. Az önkormányzati ciklus feléhez érkezve a
+                kezdeményezők átvizsgálták, mi teljesült ebből a gyakorlatban:
+                elérhetőek-e az önkormányzat legfontosabb dokumentumai
+                (jegyzőkönyvek, szerződések, közbeszerzési adatok, költségvetések,
+                vagyonnyilatkozatok stb.) a helyi honlapokon kereshető,
+                feldolgozható formában?
+              </a>
+              <div class="ag-post-tags">
+                <a href="/list-view.html" class="ag-tag">fiskális politika</a>
+                <a href="/list-view.html" class="ag-tag">közgazdaságtan</a>
+                <a href="/list-view.html" class="ag-tag">pénz</a>
+              </div>
+            </article>
+          </div>
+        </li>
+        <li
+          class="ag-post-list-alternate-item"
+          style="background-image: url('/assets/traktor02.b41095f9.png')"
+        >
+          <div class="ag-wrapper ag-wrapper-narrow">
+            <article class="ag-post">
+              <header class="ag-post-header">
+                <h2 class="ag-post-title">
+                  <a
+                    href="https://css-tricks.com/snippets/css/complete-guide-grid/"
+                    class="ag-no-visited"
+                    >A Complete Guide to Grid
+                  </a>
+                </h2>
+                <aside class="ag-post-meta">
+                  <div class="ag-post-info">
+                    <a href="https://css-tricks.com" class="ag-no-visited">
+                      <i class="ag-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 442 442"
+                          xml:space="preserve"
+                        >
+                          <path
+                            d="M171 336H70c-5.523 0-10 4.477-10 10s4.477 10 10 10h101c5.523 0 10-4.477 10-10s-4.477-10-10-10zM322 336H221c-5.523 0-10 4.477-10 10s4.477 10 10 10h101c5.522 0 10-4.477 10-10s-4.478-10-10-10zM322 86H70c-5.523 0-10 4.477-10 10s4.477 10 10 10h252c5.522 0 10-4.477 10-10s-4.478-10-10-10zM322 136H221c-5.523 0-10 4.477-10 10s4.477 10 10 10h101c5.522 0 10-4.477 10-10s-4.478-10-10-10zM322 186H221c-5.523 0-10 4.477-10 10s4.477 10 10 10h101c5.522 0 10-4.477 10-10s-4.478-10-10-10zM322 236H221c-5.523 0-10 4.477-10 10s4.477 10 10 10h101c5.522 0 10-4.477 10-10s-4.478-10-10-10zM322 286H221c-5.523 0-10 4.477-10 10s4.477 10 10 10h101c5.522 0 10-4.477 10-10s-4.478-10-10-10zM171 286H70c-5.523 0-10 4.477-10 10s4.477 10 10 10h101c5.523 0 10-4.477 10-10s-4.477-10-10-10zM171 136H70c-5.523 0-10 4.477-10 10v101c0 5.523 4.477 10 10 10h101c5.523 0 10-4.477 10-10V146c0-5.523-4.477-10-10-10zm-10 101H80v-81h81v81z"
+                          />
+                          <path
+                            d="M422 76h-30V46c0-11.028-8.972-20-20-20H20C8.972 26 0 34.972 0 46v320c0 27.57 22.43 50 50 50h342c27.57 0 50-22.43 50-50V96c0-11.028-8.972-20-20-20zm0 290c0 16.542-13.458 30-30 30H50c-16.542 0-30-13.458-30-30V46h352v305c0 13.785 11.215 25 25 25 5.522 0 10-4.477 10-10s-4.478-10-10-10c-2.757 0-5-2.243-5-5V96h30v270z"
+                          />
+                        </svg>
+                      </i>
+                      CSS Tricks </a
+                    >&nbsp;<span class="ag-text-brand">•</span>&nbsp;<a
+                      href="https://css-tricks.com/snippets/css/complete-guide-grid/"
+                      class="ag-no-visited"
+                      >2022.02.09.</a
+                    >
+                  </div>
+                </aside>
+              </header>
+              <a
+                href="https://css-tricks.com/snippets/css/complete-guide-grid/"
+                class="ag-lead"
+              >
+                Our comprehensive guide to CSS grid, focusing on all the settings
+                both for the grid parent container and the grid child elements.
+              </a>
+              <div class="ag-post-tags">
+                <a href="/list-view.html" class="ag-tag">grid</a>
+                <a href="/list-view.html" class="ag-tag">CSS</a>
+                <a href="/list-view.html" class="ag-tag">layout</a>
+              </div>
+            </article>
+          </div>
+        </li>
+      </ol>
+    </main>
+    <footer class="ag-footer">
+      <div class="ag-wrapper">
+        <ul class="ag-footer-links">
+          <li class="ag-footer-link-items">
+            <a href="#" class="ag-footer-link">
+              Adatvédelem
+            </a>
+          </li>
+          <li class="ag-footer-link-items">
+            <a href="#" class="ag-footer-link">
+              K-Monitor
+            </a>
+          </li>
+          <li class="ag-footer-link-items">
+            <a href="#" class="ag-footer-link">
+              NER Hotel
+            </a>
+          </li>
+          <li class="ag-footer-link-items">
+            <a href="#" class="ag-footer-link">
+              Süti beállítások
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>    
+    
+  </body>
+</html>

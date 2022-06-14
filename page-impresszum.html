@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="hu" x-data="{lteLGNavOpened: false, toggleMenuLteLG() { this.lteLGNavOpened = !this.lteLGNavOpened }}">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.17e50649.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;500&family=DM+Mono:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="preconnect" href="https://unpkg.com" crossorigin />
+    <script defer src="https://unpkg.com/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <title>Impresszum</title>
+    <script type="module" crossorigin src="/assets/style.7f2dd081.js"></script>
+    <link rel="stylesheet" href="/assets/style.2a8f1ac9.css">
+    <link rel="stylesheet" href="/assets/post.8a029aae.css">
+  </head>
+  <body class="ag-layout" :class="lteLGNavOpened ? 'ag-lte-lg-nav-opened' : ''">
+    <header class="ag-header">
+      <a href="#content" class="ag-sr-only">Ugrárs a tartalomhoz</a>
+      <div class="ag-wrapper">
+        <div class="ag-logo-row" style="line-height: 0;">
+          <a href="/" style="line-height: 0; display: inline-block;">
+            <img src="/assets/logo.edcdc2fb.svg" alt="Agrártámogatások" class="ag-logo" />
+          </a>
+        </div>
+        <nav class="ag-nav">
+          <ul class="ag-nav-list">
+            <li class="ag-nav-item">
+              <a href="post.html" class="ag-nav-link">az elmúlt x év megállapításai</a>
+            </li>
+            <li class="ag-nav-item">
+              <a href="list-view.html" class="ag-nav-link">közös agrárpolitika</a>
+            </li>
+            <li class="ag-nav-item">
+              <a href="page-search.html" class="ag-nav-link">12 év adatai</a>
+            </li>
+            <li class="ag-nav-item">
+              <a href="list-view-tudastar.html" class="ag-nav-link">tudástár</a>
+            </li>
+            <li class="ag-nav-item">
+              <a href="page-impresszum.html" class="ag-nav-link">impresszum</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <button
+        type="button"
+        class="ag-menu-button-lte-lg"
+        x-bind:class="{'show': lteLGNavOpened}"
+        x-bind:aria-label="lteLGNavOpened ? 'Menü bezárása' : 'Menü kinyitása'"
+        @click="toggleMenuLteLG"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <template x-teleport="body">
+        <div
+          x-cloak
+          @click="toggleMenuLteLG"
+          class="ag-backdrop"
+          x-transition.duration.300ms
+          x-show="lteLGNavOpened"
+        ></div>
+      </template>
+    </header>
+    <main class="ag-main ag-illustration-wrapper" id="content">
+      <span
+        class="ag-illustration ag-illustration-top-left"
+        style="background-image: url('/assets/wheet.ddeb8e1d.png')"
+      ></span>
+      <span
+        class="ag-illustration ag-illustration-bottom-right"
+        style="background-image: url('/assets/porc.8f96f7a9.png')"
+      ></span>
+      <div class="ag-wrapper ag-wrapper-narrow">
+        <article class="ag-post">
+          <header class="ag-post-header">
+            <h1>Impresszum</h1>
+          </header>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse provident
+            odit itaque. Adipisci vel, corrupti labore at voluptatibus ducimus harum
+            vitae nihil dignissimos officiis est omnis. Qui, nesciunt quas! Nihil?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo eum ea
+            dolore ab ipsa mollitia quas quibusdam fuga repellat quidem deserunt
+            magnam voluptatem, a, totam ullam, architecto dolores reiciendis?
+            Labore!
+          </p>
+          <h4>Quo eum ea dolore ab ipsa mollitia</h4>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae
+            itaque nam veniam cumque tempore iure. Suscipit vero placeat libero
+            animi ipsa ad id, soluta totam. Possimus, totam sapiente. Aspernatur,
+            doloribus.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            praesentium sunt aspernatur ipsa, cupiditate, dolor repellendus autem
+            nemo rem alias ducimus quos vel aperiam quod, expedita recusandae
+            dignissimos voluptates at!
+          </p>
+        </article>
+      </div>
+    </main>
+    <footer class="ag-footer">
+      <div class="ag-wrapper">
+        <ul class="ag-footer-links">
+          <li class="ag-footer-link-items">
+            <a href="#" class="ag-footer-link">
+              Adatvédelem
+            </a>
+          </li>
+          <li class="ag-footer-link-items">
+            <a href="#" class="ag-footer-link">
+              K-Monitor
+            </a>
+          </li>
+          <li class="ag-footer-link-items">
+            <a href="#" class="ag-footer-link">
+              NER Hotel
+            </a>
+          </li>
+          <li class="ag-footer-link-items">
+            <a href="#" class="ag-footer-link">
+              Süti beállítások
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>    
+    
+  </body>
+</html>

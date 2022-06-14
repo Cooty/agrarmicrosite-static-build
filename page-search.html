@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="hu" x-data="{lteLGNavOpened: false, toggleMenuLteLG() { this.lteLGNavOpened = !this.lteLGNavOpened }}">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.17e50649.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;500&family=DM+Mono:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="preconnect" href="https://unpkg.com" crossorigin />
+    <script defer src="https://unpkg.com/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <title>Keresés</title>
+    <script type="module" crossorigin src="/assets/style.7f2dd081.js"></script>
+    <link rel="stylesheet" href="/assets/style.2a8f1ac9.css">
+    <link rel="stylesheet" href="/assets/post.8a029aae.css">
+  </head>
+  <body class="ag-layout" :class="lteLGNavOpened ? 'ag-lte-lg-nav-opened' : ''">
+    <header class="ag-header">
+      <a href="#content" class="ag-sr-only">Ugrárs a tartalomhoz</a>
+      <div class="ag-wrapper">
+        <div class="ag-logo-row" style="line-height: 0;">
+          <a href="/" style="line-height: 0; display: inline-block;">
+            <img src="/assets/logo.edcdc2fb.svg" alt="Agrártámogatások" class="ag-logo" />
+          </a>
+        </div>
+        <nav class="ag-nav">
+          <ul class="ag-nav-list">
+            <li class="ag-nav-item">
+              <a href="post.html" class="ag-nav-link">az elmúlt x év megállapításai</a>
+            </li>
+            <li class="ag-nav-item">
+              <a href="list-view.html" class="ag-nav-link">közös agrárpolitika</a>
+            </li>
+            <li class="ag-nav-item">
+              <a href="page-search.html" class="ag-nav-link">12 év adatai</a>
+            </li>
+            <li class="ag-nav-item">
+              <a href="list-view-tudastar.html" class="ag-nav-link">tudástár</a>
+            </li>
+            <li class="ag-nav-item">
+              <a href="page-impresszum.html" class="ag-nav-link">impresszum</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <button
+        type="button"
+        class="ag-menu-button-lte-lg"
+        x-bind:class="{'show': lteLGNavOpened}"
+        x-bind:aria-label="lteLGNavOpened ? 'Menü bezárása' : 'Menü kinyitása'"
+        @click="toggleMenuLteLG"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <template x-teleport="body">
+        <div
+          x-cloak
+          @click="toggleMenuLteLG"
+          class="ag-backdrop"
+          x-transition.duration.300ms
+          x-show="lteLGNavOpened"
+        ></div>
+      </template>
+    </header>
+    <main class="ag-main ag-illustration-wrapper" id="content">
+      <span
+        class="ag-illustration ag-illustration-top-left"
+        style="background-image: url('/assets/truck.774095ec.png')"
+      ></span>
+      <span
+        class="ag-illustration ag-illustration-bottom-right"
+        style="background-image: url('/assets/wheet03.76cd624d.png')"
+      ></span>
+      <div class="ag-wrapper ag-wrapper-narrow">
+        <article class="ag-post">
+          <header class="ag-post-header">
+            <h1>Keress az adatbázisunkban!</h1>
+          </header>
+          <div class="ag-lead">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fuga
+            molestiae cumque eius autem recusandae ullam repellendus animi corrupti
+            velit optio veniam quod, praesentium impedit. Eos animi esse aperiam
+            suscipit.
+          </div>
+          <iframe src="https://agrartamfront.code4.hu/" frameborder="0"></iframe>
+        </article>
+      </div>
+    </main>
+    <footer class="ag-footer">
+      <div class="ag-wrapper">
+        <ul class="ag-footer-links">
+          <li class="ag-footer-link-items">
+            <a href="#" class="ag-footer-link">
+              Adatvédelem
+            </a>
+          </li>
+          <li class="ag-footer-link-items">
+            <a href="#" class="ag-footer-link">
+              K-Monitor
+            </a>
+          </li>
+          <li class="ag-footer-link-items">
+            <a href="#" class="ag-footer-link">
+              NER Hotel
+            </a>
+          </li>
+          <li class="ag-footer-link-items">
+            <a href="#" class="ag-footer-link">
+              Süti beállítások
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>    
+    
+  </body>
+</html>

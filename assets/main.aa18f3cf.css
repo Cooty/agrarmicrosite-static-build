@@ -1,0 +1,1 @@
+.ag-post-grid{padding:var(--vertical-gutter) 0;display:grid;gap:var(--wrapper-gutter)}.ag-post-grid-col>.ag-post{margin-bottom:var(--wrapper-gutter)}.ag-post-grid-col>.ag-post:last-of-type{margin-bottom:0}@media screen and (min-width: 768px){.ag-post-grid{display:grid;grid-template-columns:repeat(2,1fr)}}
