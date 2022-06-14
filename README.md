@@ -14,4 +14,4 @@ Készült:
 
 felhasználásával.
 
-Figyelem! Ez a repó pusztán az elsőkörös design implementációt és a annak bemutatását szolgálja, az oldal terve szerint WordPress alapon fog futni és ebből a kódbázisból fogunk egy egyedi theme-t készíteni (lehetőleg úgy, hogy a frontendet ugyanúgy lehessen localban fejleszteni ahogy ezt a protót, csak egy valódi WP-vel összekötve).
+Figyelem! Ez a repó pusztán az első körös design implementációt és annak bemutatását szolgálja, az oldal WordPress alapon fog futni és ebből a kódbázisból fogunk egy egyedi theme-t készíteni (lehetőleg úgy, hogy a frontendet ugyanúgy lehessen localban fejleszteni ahogy ezt a protót, csak egy valódi WP-vel összekötve).
