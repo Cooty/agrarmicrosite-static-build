@@ -37,6 +37,10 @@ const pageData = {
 };
 
 export default defineConfig({
+  // In production the `base` has to be an absolute URL of the GitHub page, where we're deploying to
+  // otherwise it will throw a 404 and the app won't start.
+  // The BASE_URL should be set on the CI (see .github/workflows/main.yml)
+  base: process.env.BASE_URL ? process.env.BASE_URL : "/",
   plugins: [
     handlebars({
       partialDirectory: resolve(root, "partials"),
