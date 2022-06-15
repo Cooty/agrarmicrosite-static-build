@@ -42,8 +42,8 @@
 
       &:hover,
       &:focus {
-        background-color: v.$color-link-active;
-        color: v.$color-link-visited;
+        background-color: v.$color-link-visited;
+        color: white;
       }
 
       &-active {
